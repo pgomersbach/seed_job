@@ -9,7 +9,7 @@ node {
             userRemoteConfigs: [[url: "${giturl}"]]
         ])
     }
-    withEnv(["SLACK_URL=https://hooks.slack.com/services/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s","DOCKER_REGISTRY=https://registry.hub.docker.com/v2","GITURL=${giturl},"GITBRANCH=${gitbranch}"]) {
+    withEnv(["SLACK_URL=https://hooks.slack.com/services/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s","DOCKER_REGISTRY=https://registry.hub.docker.com/v2","GITURL=${giturl}","GITBRANCH=${gitbranch}"]) {
         load './Jenkinsfile'
     }
 }
