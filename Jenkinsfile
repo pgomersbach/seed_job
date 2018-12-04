@@ -4,7 +4,7 @@ def gitbranch = 'master'
 node {
     stage('get job definition, wait for slave') {
         checkout([$class: 'GitSCM',
-            branches: [[name: ${gitbranch}]],
+            branches: [[name: "${gitbranch}"]],
             extensions: [[$class: 'WipeWorkspace']],
             userRemoteConfigs: [[url: 'https://github.com/pgomersbach/test-source.git']]
         ])
