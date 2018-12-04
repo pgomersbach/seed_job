@@ -4,5 +4,5 @@ node {
         extensions: [[$class: 'WipeWorkspace']],
         userRemoteConfigs: [[url: 'https://github.com/pgomersbach/test-source.git']]
     ])
-    load Jenkinsfile
+    load './Jenkinsfile'
 }
