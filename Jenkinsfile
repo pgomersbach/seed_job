@@ -6,7 +6,7 @@ node {
         checkout([$class: 'GitSCM',
             branches: [[name: "${gitbranch}"]],
             extensions: [[$class: 'WipeWorkspace']],
-            userRemoteConfigs: [[url: 'https://github.com/pgomersbach/test-source.git']]
+            userRemoteConfigs: [[url: "${giturl}"]]
         ])
     }
     load './Jenkinsfile'
