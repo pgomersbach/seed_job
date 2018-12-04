@@ -1,5 +1,5 @@
 node {
-    stage('get job definition') {
+    stage('get job definition, wait for slave') {
         checkout([$class: 'GitSCM',
             branches: [[name: 'master']],
             extensions: [[$class: 'WipeWorkspace']],
