@@ -1,5 +1,5 @@
 node {
-    stage('check out repo') {
+    stage('get job definition') {
         checkout([$class: 'GitSCM',
             branches: [[name: 'master']],
             extensions: [[$class: 'WipeWorkspace']],
