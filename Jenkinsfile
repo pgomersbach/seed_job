@@ -1,4 +1,4 @@
-def giturl = 'https://github.com/pgomersbach/test-source.git'
+def giturl = 'https://github.com/pgomersbach/test2-source.git'
 def gitbranch = 'master'
 
 node {
